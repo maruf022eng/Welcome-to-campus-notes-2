@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a class="brand" href="#home">
+            🎓 Campus <b>Notes</b>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="nav" id="mainNav">
+            <a class="active" href="#home">Home</a>
+            <a href="#notes">Notes</a>
+            <a href="#teachers">Teachers</a>
+            <a href="#community">Community</a>
+            <a href="#resources">Resources</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a class="login-btn" href="#contact">Login / Sign Up</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-shade"></div>
+
+    <div class="container hero-content">
+        <div class="hero-copy">
+            <h1>
+                Welcome to<br>
+                <span>Campus Notes</span>
+            </h1>
+
+            <h2>Your Learning Journey Starts Here!</h2>
+
+            <p>
+                কলেজের শিক্ষার্থীদের জন্য একটি ডিজিটাল
+                শিক্ষার প্ল্যাটফর্ম। এখানে সহজেই নোট,
+                সাজেশন, বিগত বছরের প্রশ্ন এবং শিক্ষকদের
+                তথ্য খুঁজে পাবে।
+            </p>
+
+            <div class="hero-actions">
+                <a href="#notes" class="btn btn-yellow">
+                    📖 Access Notes →
+                </a>
+
+                <a href="#teachers" class="btn btn-outline">
+                    👥 Teachers Information
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-slogan">
+            Learn · Share · Grow
+        </div>
+    </div>
+</section>
+
+<!-- Quick Access -->
+<section class="quick-section container">
+    <div class="section-heading">
+        <span>⚡</span>
+        <h2>Quick Access</h2>
+        <i></i>
+    </div>
+
+    <div class="quick-grid">
+        <a href="#notes" class="quick-card quick-blue">
+            <span class="quick-icon">📘</span>
+            <div>
+                <h3>Get Notes</h3>
+                <p>নোট সংগ্রহ</p>
+            </div>
+        </a>
+
+        <a href="#notes" class="quick-card quick-green">
+            <span class="quick-icon">📚</span>
+            <div>
+                <h3>All Semester</h3>
+                <p>সব সেমিস্টারের নোট</p>
+            </div>
+        </a>
+
+        <a href="#community" class="quick-card quick-purple">
+            <span class="quick-icon">❔</span>
+            <div>
+                <h3>Q&A</h3>
+                <p>প্রশ্ন ও উত্তর</p>
+            </div>
+        </a>
+
+        <a href="#community" class="quick-card quick-orange">
+            <span class="quick-icon">👥</span>
+            <div>
+                <h3>Active Community</h3>
+                <p>শিক্ষার্থীদের কমিউনিটি</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Main Dashboard -->
+<section class="dashboard container">
+
+    <!-- Semester Notes -->
+    <article class="panel notes-panel" id="notes">
+        <div class="panel-title">
+            <h2>🎓 Semester Wise Notes</h2>
+            <a href="#notes">View All →</a>
+        </div>
+
+        <div class="semester-grid">
+            <button class="semester" data-semester="1st">
+                1st Semester<br>Notes
+            </button>
+
+            <button class="semester" data-semester="2nd">
+                2nd Semester<br>Notes
+            </button>
+
+            <button class="semester" data-semester="3rd">
+                3rd Semester<br>Notes
+            </button>
+
+            <button class="semester" data-semester="4th">
+                4th Semester<br>Notes
+            </button>
+
+            <button class="semester" data-semester="5th">
+                5th Semester<br>Notes
+            </button>
+
+            <button class="semester" data-semester="6th">
+                6th Semester<br>Notes
+            </button>
+
+            <button class="semester" data-semester="7th">
+                7th Semester<br>Notes
+            </button>
+
+            <button class="semester" data-semester="8th">
+                8th Semester<br>Notes
+            </button>
+        </div>
+    </article>
+
+    <!-- Teachers -->
+    <article class="panel teacher-panel" id="teachers">
+        <div class="panel-title">
+            <h2>👥 Teachers Information</h2>
+            <a href="#teachers">View All →</a>
+        </div>
+
+        <div class="teacher-info">
+            <img src="teacher.svg" alt="Teacher">
+
+            <div>
+                <h3>Md. Rahman Hossain</h3>
+
+                <p>
+                    Assistant Professor<br>
+                    Computer Science
+                </p>
+
+                <p>☎ 01712-345678</p>
+                <p>✉ rahman@college.edu</p>
+
+                <a class="small-btn" href="mailto:rahman@college.edu">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Community -->
+    <article class="panel community-panel" id="community">
+        <div class="panel-title">
+            <h2>🗨 Active Community</h2>
+            <a href="#community">View All →</a>
+        </div>
+
+        <ul class="check-list">
+            <li>প্রশ্ন করুন ও উত্তর দিন</li>
+            <li>পড়াশোনা নিয়ে আলোচনা করুন</li>
+            <li>অভিজ্ঞতা শেয়ার করুন</li>
+            <li>নোট শেয়ার করুন</li>
+        </ul>
+
+        <button class="wide-btn" id="joinCommunity">
+            Join Community
+        </button>
+    </article>
+
+    <!-- Resources -->
+    <article class="panel resources-panel" id="resources">
+        <div class="panel-title">
+            <h2>📁 Resources</h2>
+            <a href="#resources">View All →</a>
+        </div>
+
+        <ul class="resource-list">
+            <li>▣ Previous Year Questions</li>
+            <li>▣ PDF Books</li>
+            <li>▣ Study Materials</li>
+            <li>▣ Important Suggestions</li>
+            <li>▣ Exam Preparation</li>
+        </ul>
+    </article>
+
+    <!-- About -->
+    <article class="panel about-panel" id="about">
+        <div class="panel-title">
+            <h2>🔵 About Campus Notes</h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                Campus Notes is a student-friendly
+                educational platform designed to make
+                learning easier and smarter.
+            </p>
+
+            <a class="small-btn" href="#contact">
+                Learn More →
+            </a>
+
+            <img src="images/books.svg" alt="Books">
+        </div>
+    </article>
+
+    <!-- Contact -->
+    <article class="panel contact-panel" id="contact">
+        <div class="panel-title">
+            <h2>✉ Contact Us</h2>
+        </div>
+
+        <p>✉ Email: info@campusnotes.com</p>
+        <p>☎ Phone: +880 1712-345678</p>
+
+        <div class="contact-bottom">
+            <a class="contact-form-btn"
+               href="mailto:info@campusnotes.com">
+                Contact Form
+            </a>
+
+            <div class="socials">
+                <a href="#">f</a>
+                <a href="#">▶</a>
+                <a href="#">➤</a>
+            </div>
+        </div>
+    </article>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-inner">
+
+        <a class="brand" href="#home">
+            🎓 Campus <b>Notes</b>
+        </a>
+
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#contact">Privacy Policy</a>
+            <a href="#contact">Terms & Conditions</a>
+        </div>
+
+        <p>
+            Copyright © 2026 Campus Notes.
+            All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
